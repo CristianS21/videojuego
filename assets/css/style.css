@@ -35,6 +35,7 @@ body {
     background-repeat: no-repeat;
     background-color: rgba(27, 27, 27, 0.6);
     background-blend-mode: soft-light;
+    z-index: 10;
 }
 
 .contenedor-1 .esfumado{
@@ -56,7 +57,7 @@ header {
     width: 110px;
     object-fit: contain;
     margin: 20px 35px 0 20px;
-    filter: drop-shadow(0px 0px 1.2px #fff);
+    filter: drop-shadow(0px 0px 1.2px #0d0d0d);
 }
 
 .menu {
@@ -116,7 +117,7 @@ li:hover a::after{
 
 .c1-textos {
     width: 500px;
-    margin: 150px 0 0 70px;
+    margin: 150px 0 0 95px;
 }
 
 .c1-textos h2{
@@ -359,7 +360,7 @@ li:hover a::after{
     font-size: 50px;
     color: #f36c1c;
     letter-spacing: 7px;
-    text-shadow: 1px 1px 25px  rgb(147, 146, 146);
+    text-shadow: 1px 1px 25px  rgb(251, 144, 13);
     text-transform: uppercase;
     line-height: 75px;
     text-align: end;
@@ -497,12 +498,31 @@ li:hover a::after{
     background-position: center top;
 }
 
+.contenido-3 {
+    position: relative;
+}
+
+.contenido-3 .tiro-1{
+    width: 150px;
+    position: absolute;
+    top: 35px;
+    left: 125px;
+}
+
+.contenido-3 .tiro-2{
+    width: 120px;
+    position: absolute;
+    top: 230px;
+    right: 110px;
+}
+
+
 .contenido-3 h2{
     padding: 60px 0 30px;
     font-size: 50px;
     color: #f36c1c;
     letter-spacing: 7px;
-    text-shadow: 1px 1px 25px  rgb(147, 146, 146);
+    text-shadow: 1px 1px 25px  rgb(251, 144, 13);
     text-transform: uppercase;
     line-height: 75px;
     text-align: center;
@@ -520,6 +540,7 @@ li:hover a::after{
     text-align: center;
     margin: auto;
     margin-bottom: 35px;
+
 }
 
 .contenido-3 hr{
@@ -551,7 +572,7 @@ li:hover a::after{
     background-color: rgba(250, 250, 250, 0.3);
     box-shadow: 1px 1px 20px rgb(247, 139, 8);
     border-radius: 10px;
-    margin: 12px;
+    margin: 18px;
 }
 
 .carrito-naranja{
@@ -775,7 +796,7 @@ li:hover a::after{
 }
 
 
-/*CONTENEDOR 4*/
+/*CONTENEDOR 5*/
 
 .contenedor-5 {
     background-image: url(../img/peakpx.jpg);
@@ -803,7 +824,7 @@ li:hover a::after{
     font-size: 50px;
     color: #f36c1c;
     letter-spacing: 7px;
-    text-shadow: 1px 1px 25px  rgb(147, 146, 146);
+    text-shadow: 1px 1px 25px  rgb(251, 144, 13);
     text-transform: uppercase;
     line-height: 75px;
     text-align: center;
@@ -933,6 +954,15 @@ form textarea::placeholder{
     padding: 70px 25px;
 }
 
+.contenido-historia .flecha{
+    width: 30px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    filter: drop-shadow(5px 5px 15px #000000);
+    z-index: 0;
+}
+
 .contenido-historia .titulo-acontecimiento {
     color: #f36c1c;
     font-size: 50px;
@@ -940,7 +970,7 @@ form textarea::placeholder{
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
-    text-shadow: 1px 1px 25px  rgb(147, 146, 146);
+    text-shadow: 1px 1px 25px  rgb(251, 144, 13);
     margin-bottom: 65px;
 }
 
@@ -1040,7 +1070,6 @@ text-shadow: 0px 0px 5px #0b0b0b;
 
 /*definiendo maquina*/ 
 
-
 .cont-maquina{
     width: 365px;
     padding-bottom: 25px;
@@ -1076,5 +1105,54 @@ text-shadow: 0px 0px 5px #0b0b0b;
     to {
         width: 0;
     }
+}
 
+
+/*footer*/
+
+
+footer{
+    background-color: #242322;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px 0 60px;
+    flex-wrap: wrap;
+}
+
+.footer-medio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img {
+    width: 120px;
+    margin-right: 80px;
+}
+
+footer img:nth-child(3) {
+    margin-right: 0;
+}
+
+footer p{
+   font-size: 18px;
+   color: #d0cdcd;
+   letter-spacing: 2px;
+}
+
+.footer-iconos {
+    margin: 20px 0 50px;
+}
+
+.footer-iconos img{
+    width: 30px;
+    margin: 0 25px;
+
+}
+
+.logo-footer{
+    margin: 0;
+    filter: drop-shadow(0px 0px 4px #fd950d);
 }
