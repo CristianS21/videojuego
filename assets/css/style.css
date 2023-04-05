@@ -116,7 +116,7 @@ li:hover a::after{
 
 .c1-textos {
     width: 500px;
-    margin: 200px 0 0 70px;
+    margin: 150px 0 0 70px;
 }
 
 .c1-textos h2{
@@ -155,18 +155,10 @@ li:hover a::after{
     flex-direction: column;
     align-items: end;
     justify-content: end;
-    padding-right: 55px;
+    padding: 0 55px 40px 0;
     position: relative;
 }
 
-.e-preventa{
-    color: rgb(204, 202, 202);
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    font-size: 25px;
-    margin-top: 30px;
-    font-family: 'Chakra Petch', sans-serif;
-}
 
 /*CUBO*/
 
@@ -333,207 +325,6 @@ li:hover a::after{
    .menu {
        margin-right: 5px;
    }
-
-}
-
-/* PAGE FORMULARIO*/
-
-.c-form {
-    width: 100%;
-    background-image: url(../img/hombre-bg2.jpg);
-    min-height: 100vh;
-    background-position: center center;
-    background-size: cover;
-}
-
-.c-form h2 {
-    font-family:'Special Elite', cursive;
-    color: #f36c1c;
-    font-size: 33px;
-    letter-spacing: 3px;
-    line-height: 45px;
-    text-shadow: 0px 0px 2px #fff;
-}
-
-.c-form h2 span {
-    text-transform: uppercase;
-    font-size: 58px;
-    text-shadow: 0px 0px 5px #fff;
-    letter-spacing: 8px;
-}
-.preventa{
-   text-align: center;
-   padding-top: 40px;
-}
-
-.cont-maquina{
-    width: 540px;
-    margin: auto ;
-    padding-top: 22px;
-}
-
-.cont-maquina h1{
-    height: 35px;
-    color: rgb(166, 165, 165);
-    position: relative;
-    font-size: 22px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(53, 53, 53);
-    text-align: center;
-    box-shadow: 0px 0px 8px #fff;
-    padding: 5px 10px;
-}
-
-.cont-maquina h1 span {
-    height: 35px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 0;
-    background-color: rgb(53, 53, 53);
-    border-left: 2px solid #fff;
-
-    animation: maquina 7s steps(33);
-}
-
-@keyframes maquina {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 0;
-    }
-
-}
-
-/*FORMULARIO*/
-
-.formulario {
-    background-color: rgba(249, 87, 13, 0.15);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
-    padding: 80px 100px;
-}
-
-.formulario h3 {
-    color: #252525;
-    font-size: 52px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
-    line-height: 58px;
-    text-shadow: 0px 0px 6px #f36c1c;
-    margin: 50px 50px 30px 50px;
-}
-
-.campo {
-    border-radius: 20px;
-    padding: 14px 35px;
-    background-color: #d4d4d4;
-    border: solid 1px #f36c1c;
-    color: #3f3f3f;
-    margin: 10px;
-    font-family: inherit;
-}
-
-.btn-enviar{
-    padding: 15px 45px;
-    background-color: #f36c1c;
-    color: white;
-    margin: 15px 0 0 12px;
-    font-family: inherit;
-    border: 2px solid #f36c1c;
-}
-
-.btn-enviar:hover{
-    border: 2px solid rgb(250, 248, 248);
-}
-
-.btn-regresar {
-    width: 100px;
-    padding: 15px 30px;
-    color: white;
-    margin: 15px 0 0 12px;
-    font-family: inherit;
-    background-color: rgb(77, 77, 77);
-    border: 2px solid rgb(77,77,77);
-}
-
-.btn-regresar:hover{
-
-    border: 2px solid rgb(28, 28, 28);
-}
-/*RESPONSIVE PÁGINA FORMULARIO*/
-
-@media (max-width: 875px){
-    .botones {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        margin-bottom: 40px;
-        width: 75%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .btn-enviar{
-        width: 100%;
-    }
-
-    .btn-regresar {
-        width: 100%;
-    }
-
-    .campos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-
-    .formulario{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-    .botones{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 580px){
-    .cont-maquina{
-        width: 400px;
-    }
-    
-    .cont-maquina h1{
-        font-size: 19px;
-    }
-
-    
-    .c2 h2 {
-        font-size: 24px;
-    }
-
-    .c2 h2 span {
-        font-size: 52px;
-    }
-}
-
-@media (max-width: 446px){
-    .cont-maquina{
-        width: 340px;
-    }
-    
-    .cont-maquina h1{
-        font-size: 14px;
-    }
-
 }
 
 /*CONTENEDOR-2*/
@@ -822,7 +613,6 @@ li:hover a::after{
     font-size: 14px;
 }
 
-
 .zocalo-negro{
     width: 100%;
     height: 40px;
@@ -831,9 +621,11 @@ li:hover a::after{
     align-items: center;
     justify-content: center;
 }
+
 .zocalo-negro h5:nth-child(1){
     border-left: none;
 }
+
 .zocalo-negro h5{
     color: #fff;
     width: 33%;
@@ -1154,9 +946,9 @@ form textarea::placeholder{
 
 .nuclear{
     height: 200px;
-
+    gap: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -1174,7 +966,7 @@ justify-content: center;
 align-items: center;
 margin: 0px 75px;
 font-size: 20px;
-line-height: 25px;
+line-height: 30px;
 color: #d2d1d1;
 text-shadow: 0px 0px 5px #0b0b0b;
 
@@ -1186,7 +978,8 @@ text-shadow: 0px 0px 5px #0b0b0b;
     justify-content: center;
     align-items: center;
     margin: 25px 0;
-    justify-content: space-evenly;
+    justify-content:center;
+    gap: 50px;
 }
 
 .mujer-llamas img {
@@ -1203,7 +996,7 @@ text-shadow: 0px 0px 5px #0b0b0b;
     width: 450px;
     margin: 0px 75px;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 30px;
     text-align: end;
     color: #d2d1d1;
     text-shadow: 0px 0px 5px #0b0b0b;
@@ -1214,7 +1007,8 @@ text-shadow: 0px 0px 5px #0b0b0b;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
 }
 
 .politicos img {
@@ -1228,10 +1022,59 @@ text-shadow: 0px 0px 5px #0b0b0b;
     width: 450px;
     font-size: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0px 75px;
-    line-height: 25px;
+    line-height: 30px;
     color: #d2d1d1;
     text-shadow: 0px 0px 5px #0b0b0b;
+    align-items: flex-start;
+}
+
+.politicos .pregunta {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*definiendo maquina*/ 
+
+
+.cont-maquina{
+    width: 365px;
+    padding-bottom: 25px;
+}
+
+.cont-maquina h1{
+    height: 35px;
+    color: rgb(166, 165, 165);
+    position: relative;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(25, 25, 25);
+    text-align: center;
+    box-shadow: 0px 0px 8px #fff;
+    padding: 5px 10px;
+}
+
+.cont-maquina h1 span {
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    background-color: rgb(25, 25, 25);
+  
+    animation: maquina 3.2s steps(26);
+}
+
+@keyframes maquina {
+    from {
+        width: 100%;
     }
+    to {
+        width: 0;
+    }
+
+}
