@@ -35,8 +35,10 @@ body {
     background-repeat: no-repeat;
     background-color: rgba(27, 27, 27, 0.6);
     background-blend-mode: soft-light;
-    z-index: 10;
+    z-index: 1;
+    position: relative;
 }
+
 
 .contenedor-1 .esfumado{
     background-image: linear-gradient(to bottom,rgb(13, 13, 13), transparent);
@@ -660,9 +662,10 @@ li:hover a::after{
 
 .cont-producto{
     min-height: 100vh;
-    background-image: url(../img/6003759.jpg);
+    background-image: url(../img/interior-grunge-3d-efecto-humo.jpg);
     background-size: cover;
     padding-top: 100px;
+    
 }
 
 .presentacion-venta {
@@ -692,7 +695,7 @@ li:hover a::after{
     justify-content: center;
     margin-left: 15px;
     border-radius: 10px;
-    background-color: rgba(250, 247, 247, 0.1);
+    background-color: rgba(250, 247, 247, 0.18);
 }
 
 .caracteristicas hr {
@@ -735,9 +738,9 @@ li:hover a::after{
 }
 
 .caracteristicas img{
-    width: 60px;
+    width: 50px;
     margin: auto;
-    filter: drop-shadow(0px 0px 5px #fff);
+    filter: drop-shadow(0px 0px 5px #252525);
     margin-left: 25px;
     margin-top: 12px;
 }
@@ -747,48 +750,79 @@ li:hover a::after{
     width: 33%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content:flex-end;
+    align-items:end;
     gap: 20px;
 }
 
 .agregar-carrito{
-    width: 250px;
-    background-color: rgb(104, 103, 103);
-    padding: 22px 30px;
-    border-radius: 5px;
-    color: #fff;
+    width: 280px;
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.6) 5%,rgba(205, 204, 204, 0.6) 100%);
+    padding: 15px 20px;
+    border-radius: 20px;
+    color: rgb(216, 216, 216);
     text-align: center;
     letter-spacing: 2px;
-    margin-top: 100px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 25px gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .agregar-carrito:hover{
     background-color: #36312e;
 }
 
-.comprar-ahora{
-    width: 250px;
-    background-color: rgb(251, 127, 11);
-    padding: 22px 30px;
-    border-radius: 5px;
-    color: #fff;
-    text-align: center;
-    letter-spacing: 2px;
+.agregar-carrito img {
+    margin-left: 9px;
 }
 
-.comprar-ahora:hover{
-    background-color: #f65f07;
+.comprar-ahora{
+    width: 280px;
+    background: linear-gradient(180deg, rgba(202, 152, 71, 0.18),rgba(210, 130, 51, 0.4) 100%);
+    padding: 15px 20px;
+    border-radius: 20px;
+    color: rgb(251, 127, 11);
+    text-align: center;
+    letter-spacing: 2px;
+    border: 1px solid rgb(251, 127, 11);
+    box-shadow: 1px 1px 15px rgb(251, 127, 11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+
+.agregar-carrito img {
+    margin-left: 9px;
+}
+.comprar-ahora img {
+    margin-left: 9px;
+}
+.regresar img {
+    margin-right: 9px;
 }
 
 .regresar{
-    width: 250px;
-    background-color: rgba(251, 127, 11,.4);
-    padding: 22px 30px;
-    border-radius: 5px;
-    color: #fff;
+    width: 200px;
+    background: linear-gradient(180deg, rgba(202, 152, 71, 0.18),rgba(210, 130, 51, 0.4) 100%);
+    padding: 15px 20px;
+    border-radius: 20px;
+    color: rgb(251, 127, 11);
     text-align: center;
-    letter-spacing: 2px; 
-    margin-top: 100px;
+    letter-spacing: 2px;
+    margin-top: 75px;
+    border: 1px solid rgb(251, 127, 11);
+    box-shadow: 1px 1px 15px rgb(251, 127, 11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
 }
 
 .regresar:hover{
@@ -955,7 +989,7 @@ form textarea::placeholder{
 }
 
 .contenido-historia .flecha{
-    width: 30px;
+    width: 25px;
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -1064,8 +1098,9 @@ text-shadow: 0px 0px 5px #0b0b0b;
 
 .politicos .pregunta {
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 /*definiendo maquina*/ 
@@ -1114,11 +1149,12 @@ text-shadow: 0px 0px 5px #0b0b0b;
 footer{
     background-color: #242322;
     display: flex;
-    
+    position: relative;
     align-items: center;
     justify-content: space-evenly;
     padding: 100px 0 60px;
     flex-wrap: wrap;
+    z-index: 0;
 }
 
 .footer-medio{
