@@ -349,7 +349,7 @@ li:hover a::after{
 
    .contenido-historia .flecha{
     display: none;
-}
+    }
 }
 
 @media (max-width: 690px){
@@ -391,11 +391,21 @@ li:hover a::after{
     }
 
 }
+@media (max-width: 450px){
+    
+    .cont-maquina{
+        width: 280px;
+        padding: 25px 0;
+    }
 
-@media (max-width: 400px){
-   .menu {
+    .cont-maquina h1{
+        font-size: 17px;
+    }
+
+    .menu {
        margin-right: 5px;
    }
+  
 }
 
 /*CONTENEDOR HISTORIA*/
@@ -609,13 +619,17 @@ text-shadow: 0px 0px 5px #0b0b0b;
 }
 
 @media (max-width: 690px){
-
-
 .contenido-historia .titulo-acontecimiento {
     font-size: 40px;
     }
 }
 
+@media (max-width: 450px){
+    
+.contenido-historia .titulo-acontecimiento {
+    font-size: 31px;
+    }
+}
 
 /*CONTENEDOR-2 GRÁFICOS*/
 
@@ -760,6 +774,7 @@ text-shadow: 0px 0px 5px #0b0b0b;
 
     .c2-txt h2{
         font-size: 40px;
+        text-align: center;
     }
     .c2-txt h2 span{
         font-size:50px;
@@ -978,195 +993,15 @@ text-shadow: 0px 0px 5px #0b0b0b;
 
     .contenido-3 p{
         width: 95%;
-        
     }
-
 }
 
-/*PRODUCTO*/
-
-.cont-producto{
-    min-height: 100vh;
-    background-image: url(../img/interior-grunge-3d-efecto-humo.jpg);
-    background-size: cover;
-    padding-top: 100px;
-    
+@media (max-width: 450px){
+    .contenido-3 h2{
+        font-size: 31px;
+    }
 }
 
-.presentacion-venta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cont-card{
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
- .card-text h4 {
-    text-align: center;
-    margin-bottom: 12px;
-}
-
- .card-text h3 {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    font-size: 22px;
-}
-
-
-.caracteristicas {
-    width: 330px;
-    height: 500px;
-    padding: 30px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 15px;
-    border-radius: 10px;
-    background-color: rgba(250, 247, 247, 0.18);
-}
-
-.caracteristicas hr {
-    width: 70%;
-    height: 1px;
-    border-color: gray;
-    margin-top: 20px;
-}
-
-.caracteristicas h6{
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 1px;
-    color: #f65f07;
-}
-
-.caracteristicas p{
-    font-size: 20px;
-    text-align: center;
-    margin-top: 60px;
-    color: #fff;
-}
-
-.caracteristicas h3{
-    font-size: 40px;
-    text-transform: uppercase;
-    margin: 80px 0 10px;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 4px;
-}
-
-.caracteristicas h2{
-    font-size: 40px;
-    text-transform: uppercase;
-    color: #3e8335;
-    text-align: center;
-    margin-top: 7px;
-}
-
-.caracteristicas img{
-    width: 50px;
-    margin: auto;
-    filter: drop-shadow(0px 0px 5px #252525);
-    margin-left: 25px;
-    margin-top: 12px;
-}
-
-
-.cierre-venta{
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    gap: 20px;
-}
-
-
-.agregar-carrito{
-    width: 280px;
-    background: linear-gradient(180deg, rgba(30, 30, 30, 0.6) 5%,rgba(205, 204, 204, 0.6) 100%);
-    padding: 15px 20px;
-    border-radius: 20px;
-    color: rgb(216, 216, 216);
-    text-align: center;
-    letter-spacing: 2px;
-    border: 1px solid gray;
-    box-shadow: 1px 1px 25px gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.agregar-carrito:hover{
-    background-color: #36312e;
-}
-
-.agregar-carrito img {
-    margin-left: 9px;
-}
-
-.comprar-ahora{
-    width: 280px;
-    background: linear-gradient(180deg, rgba(202, 152, 71, 0.18),rgba(210, 130, 51, 0.4) 100%);
-    padding: 15px 20px;
-    border-radius: 20px;
-    color: rgb(251, 127, 11);
-    text-align: center;
-    letter-spacing: 2px;
-    border: 1px solid rgb(251, 127, 11);
-    box-shadow: 1px 1px 15px rgb(251, 127, 11);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-}
-
-.comprar-ahora:hover{
-    background-color: rgba(246, 149, 58, 0.15);
-}
-
-.agregar-carrito img {
-    margin-left: 9px;
-}
-.comprar-ahora img {
-    margin-left: 9px;
-}
-.regresar img {
-    margin-right: 9px;
-}
-
-.regresar{
-    width: 200px;
-    background: linear-gradient(180deg, rgba(202, 152, 71, 0.18),rgba(210, 130, 51, 0.4) 100%);
-    padding: 15px 20px;
-    border-radius: 20px;
-    color: rgb(251, 127, 11);
-    text-align: center;
-    letter-spacing: 2px;
-    margin-top: 75px;
-    border: 1px solid rgb(251, 127, 11);
-    box-shadow: 1px 1px 15px rgb(251, 127, 11);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-}
-
-.regresar:hover{
-    background-color: rgba(246, 149, 58, 0.15);
-}
 
 
 /*CONTENEDOR 5*/
@@ -1189,7 +1024,7 @@ text-shadow: 0px 0px 5px #0b0b0b;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     margin: 80px 0 105px;
 }
 
@@ -1230,9 +1065,24 @@ text-shadow: 0px 0px 5px #0b0b0b;
 }
 
 .demo {
+    width: 300px;
+    background: linear-gradient(180deg, rgba(202, 152, 71, 0.18),rgba(210, 130, 51, 0.4) 100%);
+    padding: 15px 20px;
+    border-radius: 20px;
+    color: rgb(251, 127, 11);
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 75px;
+    border: 1px solid rgb(251, 127, 11);
+    box-shadow: 1px 1px 15px rgb(251, 127, 11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
    margin: 70px auto 80px; 
    font-size: 20px;
 }
+
 
 
 @media (max-width: 1068px){
@@ -1249,6 +1099,7 @@ text-shadow: 0px 0px 5px #0b0b0b;
 
     .mapa iframe {
         width: 90%;
+        margin: 0;
     }
 
     .datos-contacto{
@@ -1260,6 +1111,11 @@ text-shadow: 0px 0px 5px #0b0b0b;
 @media (max-width: 650px){
     .item-dato p{
         font-size: 20px;
+    }
+}
+@media (max-width: 450px){
+    .item-dato p{
+        font-size: 17px;
     }
 }
 
@@ -1297,6 +1153,7 @@ footer p{
    font-size: 18px;
    color: #d0cdcd;
    letter-spacing: 2px;
+   margin: 0 20px;
 }
 
 .footer-iconos {
